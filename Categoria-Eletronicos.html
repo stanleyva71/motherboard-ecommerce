@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html data-bs-theme=dark>
+<head>
+    <title>MotherBoard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="shortcut icon" href="icones/logorapa.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+
+<body class="bg-dark">
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <a href="index.html" class="navbar-brand">
+                    <img class="imgMother" src="Imagens/image-light.png">
+                </a>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-motherboard me-2"></i>Hardware</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-pc-display me-2"></i>Computadores</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-mouse me-2"></i>Perifericos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-controller me-2"></i>Eletronicos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-display me-2"></i>Monitores</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-joystick me-2"></i>Espaço gamer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Configuracao.html"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </div>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex mt-2 mx-auto flex-lg-nowrap" role="search">
+                        <input class="form-control me-2 custom-search barradepesquisa" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" id="corcaraio" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+    
+                    <ul class="nav d-flex justify-content-between mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="Favoritos.html">
+                                <i class="bi bi-bookmark iconeheader" ></i>
+
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link " href="Carrinho.html">
+                                <i class="bi bi-cart iconeheader"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conta.html">
+                                <i class="bi bi-person-circle iconeheader"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="promotionBanner">
+        <div class="banner-promocate">
+        <img src="Imagens/4.png"  id="bannerImg">
+    </div>
+    
+    <div>
+   
+    
+    <div id="filterMenu" style="background-color: #2b3035;">
+
+        <div class="filter-container bg-dark">
+            <h5 style="color: white;">Filtros de Categoria</h5>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" data-category="all">Todos</a>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Consoles">Consoles</a>
+                <div class="subfilters" id="subfilters-Consoles">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Playstation">Playstation</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Xbox">Xbox</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Nintendo">Nintendo</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Smartwatch">Smartwatch</a>
+                <div class="subfilters" id="subfilters-Smartwatch">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Sansung">Sansung</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Apple">Apple</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Xiaomi">Xiaomi</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Controles-de-console">Controle de video games</a>
+                <div class="subfilters" id="subfilters-Controles-de-console">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Controle-de-Playstation">Controle de Playstation</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Controle-de-Xbox">Controle de Xbox</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Smartphones">Smartphones</a>
+                <div class="subfilters" id="subfilters-Smartphones">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Galaxy">Galaxy</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Iphone">Iphone</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Motorola">Motorola</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Redmi">Redmi</a>
+                </div>
+            </div>
+        </div>
+    <br/>
+
+        <div class="filter-container bg-dark text-light">
+            <h5 style="color: white;">Filtrar por Preço</h5>
+            <input type="text" id="minPrice" class="form-control bg-dark" placeholder="Preço Mínimo" maxlength="6" /><br/>
+<input type="text" id="maxPrice" class="form-control bg-dark" placeholder="Preço Máximo" maxlength="6" />
+<button id="filterPrice" class="  mt-2 botaodefiltrar">Filtrar</button>
+        </div>
+        <button id="closeFilters" class="btn btn-secondary Xdocategoria" style="position: absolute; top: 10px; right: 10px;">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </div>
+
+    <div class="overlay"></div>
+    <div class=" mt-4 categoraidentrodocate">
+        <div class="fundodocatecate" id="categoryBar">
+        <div class="category-title container">
+            <div class="col-md-7  titulocate"> <i class="bi bi-grid-3x3-gap-fill"></i> CATEGORIAS</h1></div>
+        </div>
+        <div class="category-bar d-flex align-items-center"  >
+             <a href="Categoria-Eletronicos.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Eletronicos</button></a>
+             <a href="Categoria-Hardware.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Hardware</button></a>
+             <a href="Categoria-Computadores.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Computadores</button></a>
+             <a href="Categoria-Perifericos.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Perifericos</button></a>
+             <a href="Categoria-Monitores.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Monitores</button></a>
+             <a href="Categoria-Espaco-Gamer.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Espaco gamer</button></a>
+
+        </div>
+    </div></div>
+    <br/>
+    <div class="containerproduto-categoria">
+        <div class="sumirfiltrarcate">
+        <button id="toggleFilters" class="btn btn-gradient btn-lg d-flex align-items-center gap-2 shadow">
+            <i class="bi bi-funnel"></i>
+            Exibir Filtros
+          </button><br/></div>
+        <div class="container text-center">
+           
+            <div class="row">
+              <div class="col-md-3 ms-md-auto"> <h1 class="text-center text-white fundoprod1 mx-auto">Eletronicos</h1></div>
+              <div class="col-md-3 ms-md-auto">  </div>
+            </div>
+           
+          </div>
+       
+      
+          <div class=" container-fluid">
+        <div class="row row-cols-1  row-cols-md-3 g-4 py-5 " id="myRow">
+            <div class="col produtocate" data-category="Consoles" data-subcategory="Nintendo" data-price="2200">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Nintendo Switch.avif" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Nintendo switch</h5>
+                        <p class="card-text">nintendo switch foi desenvolvido para fazer parte da sua vida, transformando-se de um console doméstico</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 2.200,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Smartwatch" data-subcategory="Apple" data-price="208">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Smartwatch-AppleCATE.jpeg" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartwatch Série 6</h5>
+                        <p class="card-text"> Com Tela Full Hd, Botão Giratório, App+, Rede Sociais de cor branco  suporte para ecg + ppg.</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 208,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Controles-de-console" data-subcategory="Controle-de-Playstation" data-price="356">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/ps5-produto2.png" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Controle Sony DualSense PS5, Sem Fio, Branco</h5>
+                        <p class="card-text">Sinta o feedback fisicamente responsivo às suas ações no jogo com atuadores </p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 356,26</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Smartphones" data-subcategory="Motorola" data-price="1397">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/MotorolaCATE.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Motorola Moto G34 5g 256gb Tela 6.5</h5>
+                        <p class="card-text">deixe-se envolver pela exclusividade e estilo do moto g34 vegan leather.</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.397,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Controles-de-console" data-subcategory="Controle-de-Xbox" data-price="179">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Controle-Series-X.jpeg" class="card-img-top" alt="Produto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Controle Knup LED, Para XBOX Series S/X,</h5>
+                        <p class="card-text">-Compatível: Xbox One, Windows 11, 10, 8, 7, Vista, XP, Linux</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 179,90</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Consoles" data-subcategory="Playstation" data-price="3800">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/ps5-produtos.jpg" class="card-img-top" alt="Produto 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Console Sony Playstation 5, Edição Digital, Branco</h5>
+                        <p class="card-text"> 3.6 GHz, (4.1GHz Max Turbo), Cachê 4MB, 8 Núcleos, 16 Threads.</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 3.800,00</h3>
+                           <a href="produto.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Smartwatch" data-subcategory="Xiaomi" data-price="999">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Smartwatch-XiaomiCATE.jpeg" class="card-img-top" alt="Produto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartwatch Xiaomi Redmi Watch 4.</h5>
+                        <p class="card-text">Equipados com algoritmos de movimento profissionais para.</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 999,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Consoles" data-subcategory="Xbox" data-price="1600">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Console-Xbox-Series-X-1tb-Preto-Forza-Horizon-5-Rrt-00057_1691758689_gg.jpg" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Consoles Xbox series x</h5>
+                        <p class="card-text"> Console de Nova Geracao capaz de rodar todos os jogos com alta perfomance com resolucao em 4k</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 2.500,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Smartphones" data-subcategory="Galaxy" data-price="2898">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Smartphone-Galaxy.jpeg" class="card-img-top" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone Samsung Galaxy S23, 256GB Preto 5G,</h5>
+                        <p class="card-text"> É o smartphone top de linha pra quem quer um aparelho completo</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 2.898,90</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Smartwatch" data-subcategory="Sansung" data-price="1699">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Sansung-watchCATE.jpeg" class="card-img-top" alt="Produto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartwatch Samsung Galaxy Watch 6</h5>
+                        <p class="card-text">oferece o mais completo conjunto de funções de monitoramento</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.699,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Smartphones" data-subcategory="Redmi" data-price="1034">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Smartphone-RedmiCATE.jpeg" class="card-img-top" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone Xiaomi Redmi 13c, 256GB,</h5>
+                        <p class="card-text">ACapture cada momento com riqueza de detalhes e adicione um toque nostálgico</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.034,10</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Smartphones" data-subcategory="Iphone" data-price="244">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Apple-iPhoneCATE.jpeg" class="card-img-top" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 13 Apple, 128GB, A15 Bionic Chip A15 </h5>
+                        <p class="card-text">iPhone 13 O sistema de câmera dupla mais avançado em um iPhone.</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 3.699,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div> </div></div>
+    <footer class="bg-body-tertiary text-white mt-5 pt-5 pb-4" id="footerdocate"  data-bs-theme="dark">
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <a href="#" class="navbar-brand">
+                        <img class="imgMother mb-4" src="Imagens/image-light.png">
+                    </a>  
+                    <section class="mb-4">
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoface" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhottw" href="https://x.com/Motherboard2024" role="button"><i class="bi bi-twitter"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoinsta" href="https://www.instagram.com/motherboardtecnologic1" role="button"><i class="bi bi-instagram"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoyou" href="https://www.youtube.com/@MotherboardTecnologic" role="button"><i class="bi bi-youtube"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhogit" href="https://github.com/akavh/TCC3ANOC" role="button"><i class="bi bi-github"></i></a>
+                  </section>
+                </div>
+                
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Dúvidas:</h6>
+                    <p>
+                      <a href="Politica.html" class="links2"> Reembolso</a>
+                        
+                    </p>
+                    <p>
+                      <a href="atendimento.html" class="links2"> Prazos e Entregas</a>
+                    </p>
+                    <p>
+                        
+                        <a href="atendimento.html" class="links2"> Formas de pagamento</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Cliente:</h6>
+                    <p>
+                        <a href="Conta.html" class="links2"> Minha Conta</a>
+                    </p>
+                    <p>
+                        <a href="Conta.html" class="links2"> Meus pedidos</a>
+                    </p>
+                    <p>
+                        <a href="atendimento.html" class="links2"> Atendimento ao Cliente</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Ajuda:</h6>
+                    <p>
+                      <a href="SobreNos.html" class=" links2"> Sobre nós</a>
+                        
+                    </p>
+                    <p>
+                      <a href="FaleConosco.html" class=" links2"> Fale Conosco</a>
+                    </p>
+                    <p>
+                      <a href="Politica.html" class=" links2"> Política de Privacidade</a>
+                        
+                    </p>
+                </div>
+
+                <hr class="mb-4">
+                <div>
+                    <p> © 2024 Motherboard Tecnologic. Todos os direitos reservados.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    
+    <script src="assets/scripts/categoria-1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+            
+</body>
+</html>

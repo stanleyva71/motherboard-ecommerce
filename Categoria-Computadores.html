@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html data-bs-theme=dark>
+<head>
+    <title>MotherBoard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="shortcut icon" href="icones/logorapa.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+
+<body class="bg-dark">
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <a href="index.html" class="navbar-brand">
+                    <img class="imgMother" src="Imagens/image-light.png">
+                </a>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-motherboard me-2"></i>Hardware</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-pc-display me-2"></i>Computadores</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-mouse me-2"></i>Perifericos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-controller me-2"></i>Eletronicos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-display me-2"></i>Monitores</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-joystick me-2"></i>Espaço gamer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Configuracao.html"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </div>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex mt-2 mx-auto flex-lg-nowrap" role="search">
+                        <input class="form-control me-2 custom-search barradepesquisa" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" id="corcaraio" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+    
+                    <ul class="nav d-flex justify-content-between mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="Favoritos.html">
+                                <i class="bi bi-bookmark iconeheader" ></i>
+
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link " href="Carrinho.html">
+                                <i class="bi bi-cart iconeheader"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conta.html">
+                                <i class="bi bi-person-circle iconeheader"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="promotionBanner">
+        <div class="banner-promocate">
+        <img src="Imagens/5.png"  id="bannerImg">
+    </div>
+    
+    <div>
+   
+    
+    <div id="filterMenu" style="background-color: #2b3035;">
+
+        <div class="filter-container bg-dark">
+            <h5 style="color: white;">Filtros de Categoria</h5>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" data-category="all">Todos</a>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Laptops">Laptops</a>
+                <div class="subfilters" id="subfilters-Laptops">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Nootebook-gamer">Nootebook gamer</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Macbooks">Macbooks</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Nootebook-Escritorios">Nootebook de escritorio</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action" data-category="PC">Pc</a>
+                <div class="subfilters" id="subfilters-PC">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Pc-Gamer">Pc Gamer</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Pc-Office">Pc de Escritorio</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Tudo-em-um">Tudo em um</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Impressora">Impressora</a>
+                <div class="subfilters" id="subfilters-Impressora">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Impressora-3D">Impressora 3D</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Impressora-Laser">Impressora Laser</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Impressora-Multifuncional">mpressora Multifuncional</a>
+                </div>
+            </div>
+        </div>
+    <br/>
+
+        <div class="filter-container bg-dark text-light">
+            <h5 style="color: white;">Filtrar por Preço</h5>
+            <input type="text" id="minPrice" class="form-control bg-dark" placeholder="Preço Mínimo" maxlength="6" /><br/>
+<input type="text" id="maxPrice" class="form-control bg-dark" placeholder="Preço Máximo" maxlength="6" />
+<button id="filterPrice" class="  mt-2 botaodefiltrar">Filtrar</button>
+        </div>
+        <button id="closeFilters" class="btn btn-secondary Xdocategoria" style="position: absolute; top: 10px; right: 10px;">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </div>
+
+    <div class="overlay"></div>
+    <div class=" mt-4 categoraidentrodocate">
+        <div class="fundodocatecate" id="categoryBar">
+        <div class="category-title container">
+            <div class="col-md-7  titulocate"> <i class="bi bi-grid-3x3-gap-fill"></i> CATEGORIAS</h1></div>
+        </div>
+        <div class="category-bar d-flex align-items-center"  >
+             <a href="Categoria-Computadores.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Computadores</button></a>
+             <a href="Categoria-Hardware.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Hardware </button></a>
+             <a href="Categoria-Perifericos.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Perifericos</button></a>
+             <a href="Categoria-Eletronicos.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Eletronicos</button></a>
+             <a href="Categoria-Monitores.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Monitores</button></a>
+             <a href="Categoria-Espaco-Gamer.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Espaco gamer</button></a>
+
+        </div>
+    </div></div>
+    <br/>
+    <div class="containerproduto-categoria">
+        <div class="sumirfiltrarcate">
+        <button id="toggleFilters" class="btn btn-gradient btn-lg d-flex align-items-center gap-2 shadow">
+            <i class="bi bi-funnel"></i>
+            Exibir Filtros
+          </button><br/></div>
+        <div class="container text-center">
+           
+            <div class="row">
+              <div class="col-md-3 ms-md-auto"> <h1 class="text-center text-white fundoprod1 mx-auto">Computadores</h1></div>
+              <div class="col-md-3 ms-md-auto">  </div>
+            </div>
+           
+          </div>
+       
+      
+          <div class=" container-fluid">
+        <div class="row row-cols-1  row-cols-md-3 g-4 py-5 " id="myRow">
+            <div class="col produtocate" data-category="Laptops" data-subcategory="Macbooks" data-price="8400">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/MacbookCate.jpeg" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Air Apple 15", M2, CPU 8 Núcleos, GPU 10 Núcleos</h5>
+                        <p class="card-text">MacBook Air de 15 polegadas é incrivelmente fino.</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 8.400.00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="PC" data-subcategory="Pc-Gamer" data-price="1890">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/pc1.jpg" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Computador Gamer NTC Ryzen 5-5600G, 16GB RAM,</h5>
+                        <p class="card-text">vem equipado com processador AMD Ryzen 5 5600G com 6 Núcleos</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.890,90</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Impressora" data-subcategory="Impressora-Multifuncional" data-price="1099">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/impressora-multifuncionalCATE.jpeg" class="card-img-top" alt="Produto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Impressora Multifuncional Epson EcoTank L3250</h5>
+                        <p class="card-text">multifuncional tanque de tinta 3 em 1 com conexão wireless destinada à famílias,</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.099,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="PC" data-subcategory="Pc-Office" data-price="899">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/PC-OFFICECATE.png" class="card-img-top" alt="Produto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Pc Home Office Intel Core I5 3.60ghz</h5>
+                        <p class="card-text">  com Memória 8GB mh2666 DDR3 com SSD 480GB</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 899,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Laptops" data-subcategory="Nootebook-Escritorios" data-price="1096">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Notebook-EscritorioCATE.jpeg" class="card-img-top" alt="Produto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Notebook Positivo Motion Grey 14.1"</h5>
+                        <p class="card-text">HD Celeron,1,10 GHz N4020, 128GB, 4GB, Linux Q464c.</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.096,50</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Impressora" data-subcategory="Impressora-3D" data-price="2859">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Impressora-3dCATE.jpeg" class="card-img-top" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Impressora 3D Creality K1,</h5>
+                        <p class="card-text">Com  Velocidade máxima de 600mm/s sendo 12 vezes mais rapido que uma impressora normal</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 2.859,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="PC" data-subcategory="Tudo-em-um" data-price="2435">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/ALL-IN-ONE.jpeg" class="card-img-top" alt="Produto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Computador PC Completo Efacini, Intel Core I7</h5>
+                        <p class="card-text">  16gb, WINDOWS 11 Pro, Monitor 24 ", SSD Nvme - 128</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 2.435,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Laptops" data-subcategory="Nootebook-gamer" data-price="489999">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/NootbookgamerCate.jpeg" class="card-img-top" alt="Produto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Notebook Gamer Acer Nitro V15 Intel Core i5-13420H,</h5>
+                        <p class="card-text">8GB RAM, GeForce RTX 3050, SSD 512GB, 15.6" FHD IPS 144Hz,</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 4.899,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Impressora" data-subcategory="Impressora-Laser" data-price="1219">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Impressra-laserCATE.jpeg" class="card-img-top" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Impressora Multifuncional Xerox Laser</h5>
+                        <p class="card-text">Descubra uma mobilidade real com impressão sem fio segura. 110V,</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.219,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div> </div></div>
+    <footer class="bg-body-tertiary text-white mt-5 pt-5 pb-4" id="footerdocate"  data-bs-theme="dark">
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <a href="#" class="navbar-brand">
+                        <img class="imgMother mb-4" src="Imagens/image-light.png">
+                    </a>  
+                    <section class="mb-4">
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoface" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhottw" href="https://x.com/Motherboard2024" role="button"><i class="bi bi-twitter"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoinsta" href="https://www.instagram.com/motherboardtecnologic1" role="button"><i class="bi bi-instagram"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoyou" href="https://www.youtube.com/@MotherboardTecnologic" role="button"><i class="bi bi-youtube"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhogit" href="https://github.com/akavh/TCC3ANOC" role="button"><i class="bi bi-github"></i></a>
+                  </section>
+                </div>
+                
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Dúvidas:</h6>
+                    <p>
+                      <a href="Politica.html" class="links2"> Reembolso</a>
+                        
+                    </p>
+                    <p>
+                      <a href="atendimento.html" class="links2"> Prazos e Entregas</a>
+                    </p>
+                    <p>
+                        
+                        <a href="atendimento.html" class="links2"> Formas de pagamento</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Cliente:</h6>
+                    <p>
+                        <a href="Conta.html" class="links2"> Minha Conta</a>
+                    </p>
+                    <p>
+                        <a href="Conta.html" class="links2"> Meus pedidos</a>
+                    </p>
+                    <p>
+                        <a href="atendimento.html" class="links2"> Atendimento ao Cliente</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Ajuda:</h6>
+                    <p>
+                      <a href="SobreNos.html" class=" links2"> Sobre nós</a>
+                        
+                    </p>
+                    <p>
+                      <a href="FaleConosco.html" class=" links2"> Fale Conosco</a>
+                    </p>
+                    <p>
+                      <a href="Politica.html" class=" links2"> Política de Privacidade</a>
+                        
+                    </p>
+                </div>
+
+                <hr class="mb-4">
+                <div>
+                    <p> © 2024 Motherboard Tecnologic. Todos os direitos reservados.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    
+    <script src="assets/scripts/categoria-1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+            
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html data-bs-theme=dark>
+<head>
+    <title>MotherBoard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="shortcut icon" href="icones/logorapa.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+
+<body class="bg-dark">
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <a href="index.html" class="navbar-brand">
+                    <img class="imgMother" src="Imagens/image-light.png">
+                </a>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-motherboard me-2"></i>Hardware</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-pc-display me-2"></i>Computadores</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-mouse me-2"></i>Perifericos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-controller me-2"></i>Eletronicos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-display me-2"></i>Monitores</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-joystick me-2"></i>Espaço gamer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Configuracao.html"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </div>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex mt-2 mx-auto flex-lg-nowrap" role="search">
+                        <input class="form-control me-2 custom-search barradepesquisa" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" id="corcaraio" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+    
+                    <ul class="nav d-flex justify-content-between mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="Favoritos.html">
+                                <i class="bi bi-bookmark iconeheader" ></i>
+
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link " href="Carrinho.html">
+                                <i class="bi bi-cart iconeheader"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conta.html">
+                                <i class="bi bi-person-circle iconeheader"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="promotionBanner">
+        <div class="banner-promocate">
+        <img src="Imagens/1.png"  id="bannerImg">
+    </div>
+    
+    <div>
+   
+    
+    <div id="filterMenu" style="background-color: #2b3035;">
+
+        <div class="filter-container bg-dark">
+            <h5 style="color: white;">Filtros de Categoria</h5>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" data-category="all">Todos</a>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Processador">Processador</a>
+                <div class="subfilters" id="subfilters-Processador">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="AMD">AMD</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="Intel">Intel</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Memoria-Ram">Memoria Ram</a>
+                <div class="subfilters" id="subfilters-Memoria-Ram">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="4gb">4gb</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="8gb">8gb</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="16gb">16gb</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Placa-de-video">Placa de video</a>
+                <div class="subfilters" id="subfilters-Placa-de-video">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="RTX">RTX</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="GTX">GTX</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="RADEON">RADEON</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action" data-category="Armazenamento">Armazenamento</a>
+                <div class="subfilters" id="subfilters-Armazenamento">
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="120-128">120 - 128gb</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="240-256">240 - 256gb</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="480-512">480 - 512gb</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-subcategory="960-1">960 - 1TB</a>
+                </div>
+            </div>
+        </div>
+    <br/>
+
+        <div class="filter-container bg-dark text-light">
+            <h5 style="color: white;">Filtrar por Preço</h5>
+            <input type="text" id="minPrice" class="form-control bg-dark" placeholder="Preço Mínimo" maxlength="6" /><br/>
+<input type="text" id="maxPrice" class="form-control bg-dark" placeholder="Preço Máximo" maxlength="6" />
+<button id="filterPrice" class="  mt-2 botaodefiltrar">Filtrar</button>
+        </div>
+        <button id="closeFilters" class="btn btn-secondary Xdocategoria" style="position: absolute; top: 10px; right: 10px;">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </div>
+
+    <div class="overlay"></div>
+    <div class=" mt-4 categoraidentrodocate">
+        <div class="fundodocatecate" id="categoryBar">
+        <div class="category-title container">
+            <div class="col-md-7  titulocate"> <i class="bi bi-grid-3x3-gap-fill"></i> CATEGORIAS</h1></div>
+        </div>
+        <div class="category-bar d-flex align-items-center"  >
+             <a href="Categoria-Hardware.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Hardware</button></a>
+             <a href="Categoria-Computadores.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Computadores</button></a>
+             <a href="Categoria-Perifericos.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Perifericos</button></a>
+             <a href="Categoria-Eletronicos.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Eletronicos</button></a>
+             <a href="Categoria-Monitores.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Monitores</button></a>
+             <a href="Categoria-Espaco-Gamer.html" class="category-link"> <button class="bnt category-item flex-grow-1" >Espaco gamer</button></a>
+
+        </div>
+    </div></div>
+    <br/>
+    <div class="containerproduto-categoria">
+        <div class="sumirfiltrarcate">
+        <button id="toggleFilters" class="btn btn-gradient btn-lg d-flex align-items-center gap-2 shadow">
+            <i class="bi bi-funnel"></i>
+            Exibir Filtros
+          </button><br/></div>
+        <div class="container text-center">
+           
+            <div class="row">
+              <div class="col-md-3 ms-md-auto"> <h1 class="text-center text-white fundoprod1 mx-auto">Hardware</h1></div>
+              <div class="col-md-3 ms-md-auto">  </div>
+            </div>
+           
+          </div>
+       
+      
+          <div class=" container-fluid">
+        <div class="row row-cols-1  row-cols-md-3 g-4 py-5 " id="myRow">
+            <div class="col produtocate" data-category="Processador" data-subcategory="Intel" data-price="800">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/processador-intel-categoria.jpg" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Processador Intel Core i5-12400F</h5>&nbsp
+                        <p class="card-text">2.5GHz (4.4GHz Max Turbo), Cache 18MB, LGA 1700 - BX8071512400F</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 800,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Memoria-Ram" data-subcategory="8gb" data-price="184">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/memoriaram8gb-categoria.jpg" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Memória RAM Kingston Beast 8GB</h5>
+                        <p class="card-text"> DDR4 proporciona um poderoso aumento de performance para jogos</p>&nbsp &nbsp
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 184,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Placa-de-video" data-subcategory="RTX" data-price="1890">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/rtx-categoria.jpg" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Placa de Video RTX 3060 Palit NVIDIA GeForce</h5>
+                        <p class="card-text">12GB GDDR6, RGB, DLSS, G-Sync, Ray Tracing.</p>&nbsp &nbsp
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.890,90</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Armazenamento" data-subcategory="480-512" data-price="269">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/SSDKINGSTOM-categoria.jpg" class="card-img-top" alt="Produto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">SSD SATA Kingston, A400, 480GB/s.</h5>
+                        <p class="card-text">  aumenta drasticamente a resposta do seu computador junto com velocidade</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 269,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Placa-de-video" data-subcategory="GTX" data-price="899">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/GTX-categoria.jpg" class="card-img-top" alt="Produto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Placa de Vídeo gtx 1650TI NVIDIA geforce</h5>
+                        <p class="card-text">D6 Ventus XS OCV3 MSI NVIDIA GeForce, 4GB GDDR6, G- Sync. de alta perfomance</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 899,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Processador" data-subcategory="AMD" data-price="1850">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Processador-amd-categoria.jpg" class="card-img-top" alt="Produto 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Processador AMD Ryzen 7 5700X3D 3.6 GHz</h5>
+                        <p class="card-text"> 3.6 GHz, (4.1GHz Max Turbo), Cachê 4MB, 8 Núcleos, 16 Threads. para performance</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.850,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Memoria-Ram" data-subcategory="16gb" data-price="320">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/memoriaram16gb-categoriajpg.jpg" class="card-img-top" alt="Produto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Memória RAM Kingston Beast 16GB DDR4</h5>
+                        <p class="card-text">Beast aprimora o desempenho de qualquer sistema com 3200MHz e DDR4.</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 320,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Processador" data-subcategory="Intel" data-price="1600">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/processador-intel2-categoria.jpg" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Processador Intel Core i7-12700F 2.1GHz</h5>
+                        <p class="card-text"> 2.1GHz (4.9GHz Max Turbo), Cache 25MB, LGA 1700 </p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.600,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Armazenamento" data-subcategory="120-128" data-price="129">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/SSD-nvme128-categoria.jpg" class="card-img-top" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">SSD Tronos 128</h5>
+                        <p class="card-text">umente o desempenho do seu computador com a melhor tecnologia de armazenamento atualemte!</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 128,00</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Placa-de-video" data-subcategory="RADEON" data-price="1799">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Radeon-Categoria.jpg" class="card-img-top" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">RX 6600 V2 ASUS AMD Radeon</h5>
+                        <p class="card-text">As novas placas graficas AMD são otimizadas para reduzir o tempo  em jogos de nova geracao</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 1.799,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Memoria-Ram" data-subcategory="4gb" data-price="169">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Memoriaram4gb-Categoria.jpg" class="card-img-top" alt="Produto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Memória RAM Corsair</h5>
+                        <p class="card-text">Corsair aprimora o estilo, a velocidade e o desempenho de qualquer sistema com  2666MHz e DDR4.</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 169,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Armazenamento" data-subcategory="960-1" data-price="328">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Armazenamento1T-Categoria.jpg" class="card-img-top" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">HD WD Blue 1TB</h5>
+                        <p class="card-text">As unidades WD Blue fornecem um desempenho e confiabilidade sólidos, e seguranca</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 328,99</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col produtocate" data-category="Armazenamento" data-subcategory="240-256" data-price="244">
+                <div class="card text-light bg-dark">
+                    <img src="Imagens/Armazenamento256gb-Categoria.jpg" class="card-img-top" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">SSD Kingston SATA III</h5>
+                        <p class="card-text">O SSD Kingston KC600 oferece incrivel tempos incríveis de inicialização, e transferenca de dados</p>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>R$ 244,71</h3>
+                           <a href="pagamento.html"><button class="btn btn-primary" id="corcaraio1">Comprar agora</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div> </div></div>
+    <footer class="bg-body-tertiary text-white mt-5 pt-5 pb-4" id="footerdocate"  data-bs-theme="dark">
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <a href="#" class="navbar-brand">
+                        <img class="imgMother mb-4" src="Imagens/image-light.png">
+                    </a>  
+                    <section class="mb-4">
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoface" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhottw" href="https://x.com/Motherboard2024" role="button"><i class="bi bi-twitter"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoinsta" href="https://www.instagram.com/motherboardtecnologic1" role="button"><i class="bi bi-instagram"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoyou" href="https://www.youtube.com/@MotherboardTecnologic" role="button"><i class="bi bi-youtube"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhogit" href="https://github.com/akavh/TCC3ANOC" role="button"><i class="bi bi-github"></i></a>
+                  </section>
+                </div>
+                
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Dúvidas:</h6>
+                    <p>
+                      <a href="Politica.html" class="links2"> Reembolso</a>
+                        
+                    </p>
+                    <p>
+                      <a href="atendimento.html" class="links2"> Prazos e Entregas</a>
+                    </p>
+                    <p>
+                        
+                        <a href="atendimento.html" class="links2"> Formas de pagamento</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Cliente:</h6>
+                    <p>
+                        <a href="Conta.html" class="links2"> Minha Conta</a>
+                    </p>
+                    <p>
+                        <a href="Conta.html" class="links2"> Meus pedidos</a>
+                    </p>
+                    <p>
+                        <a href="atendimento.html" class="links2"> Atendimento ao Cliente</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Ajuda:</h6>
+                    <p>
+                      <a href="SobreNos.html" class=" links2"> Sobre nós</a>
+                        
+                    </p>
+                    <p>
+                      <a href="FaleConosco.html" class=" links2"> Fale Conosco</a>
+                    </p>
+                    <p>
+                      <a href="Politica.html" class=" links2"> Política de Privacidade</a>
+                        
+                    </p>
+                </div>
+
+                <hr class="mb-4">
+                <div>
+                    <p> © 2024 Motherboard Tecnologic. Todos os direitos reservados.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    
+    <script src="assets/scripts/categoria-1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+            
+</body>
+</html>

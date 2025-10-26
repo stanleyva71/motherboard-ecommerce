@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en" data-bs-theme=dark>
+
+<head>
+    <title>MotherBoard - Atendimento</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="icones/logorapa.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="bg-dark text-light">
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <a href="index.html" class="navbar-brand">
+                    <img class="imgMother" src="Imagens/image-light.png">
+                </a>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-motherboard me-2"></i>Hardware</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-pc-display me-2"></i>Computadores</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-mouse me-2"></i>Perifericos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-controller me-2"></i>Eletronicos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-display me-2"></i>Monitores</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Categoria-Hardware.html"><i class="bi bi-joystick me-2"></i>Espaço gamer</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Configuracao.html"><i class="bi bi-gear me-2"></i>Configurações</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </div>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex mt-2 mx-auto flex-lg-nowrap" role="search">
+                        <input class="form-control me-2 custom-search barradepesquisa" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" id="corcaraio" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+    
+                    <ul class="nav d-flex justify-content-between mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="Favoritos.html">
+                                <i class="bi bi-bookmark iconeheader" ></i>
+
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link " href="Carrinho.html">
+                                <i class="bi bi-cart iconeheader"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conta.html">
+                                <i class="bi bi-person-circle iconeheader"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mentos p-5 rounded-4 border mt-5">
+        <!-- Container de Bem-vindo -->
+        <div class="row">
+
+            <div class="col-12">
+                <div class="welcome-container bg-dark">
+
+                    <div class="tituloAten p-3 text-center rounded-2">
+                        <h3>Seja Bem-vindo ao Atendimento ao Cliente</h3>
+                    </div>
+
+                    <div class="p-3 mt-3 text-center">
+                        <p>Tire suas dúvidas perguntando ao nosso chat de atendimento</p>
+
+                        <div class="d-flex justify-content-center">
+                            <div class="input-group groupAtend" style="max-width: 400px;">
+                                <input type="text" class="form-control pergunta rounded-4"
+                                    placeholder="Faça sua pergunta">
+                                <span class="input-group-texttwo  border-0">
+                                    <i class="bi bi-arrow-right fs-3"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="mediaFases p-3">
+                        <p class="text-center">Ou se prefirir... veja os tópicos mais abaixo ou use o acesso
+                            rápido</p>
+
+                        <div class="d-flex justify-content-center gap-4 mb-5">
+                            <div class="cardsAten text-center">
+                                <a href="#garantia" class="d-block text-decoration-none text-white bgwallet2 rounded-3">
+                                    <i class="bi bi-shield-check fs-2"></i>
+                                </a>
+                                <div class="txtCard mt-2">Garantia da compra</div>
+                            </div>
+                            <div class="cardsAten text-center">
+                                <a href="#pedido" class="d-block text-decoration-none text-white bgwallet2 rounded-3">
+                                    <i class="bi bi-bag-check fs-2"></i>
+                                </a>
+                                <div class="txtCard mt-2">Fases da compra</div>
+                            </div>
+                            <div class="cardsAten text-center">
+                                <a href="#estorno" class="d-block text-decoration-none text-white bgwallet2 rounded-3">
+                                    <i class="bi bi-cash-coin fs-2"></i>
+                                </a>
+                                <div class="txtCard mt-2">Pagamento e Estorno</div>
+                            </div>
+                            <div class="cardsAten text-center">
+                                <a href="#retirar" class="d-block text-decoration-none text-white bgwallet2 rounded-3">
+                                    <i class="bi bi-shop fs-2"></i>
+                                </a>
+                                <div class="txtCard mt-2">Retirar na loja</div>
+                            </div>
+                        </div>
+                    </section> <!-- Fechamento do acesso rápido -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Container de Perguntas Frequentes e Links -->
+        <div class="row mt-4 fw-bold">
+
+            <!-- Acordeões -->
+            <div class="col-12 col-md-9 w-100">
+                <div class="accordion-container mentos2 p-3 bg-dark">
+                    <div class="accordion mb-5" id="accordionGarantia">
+
+                        <div class="txtPerg">
+                            <a name="garantia">
+                                <h4>Garantia ou Arrependimento</h4>
+                            </a>
+                        </div>
+
+                        <div class="card carddoatendimento">
+                            <div id="headingGarantiaOne">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class=" btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseGarantiaOne" aria-expanded="false"
+                                        aria-controls="collapseGarantiaOne">
+                                        Preciso acionar a garantia de um produto. Como proceder?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseGarantiaOne" class="collapse" aria-labelledby="headingGarantiaOne"
+                                data-parent="#accordionGarantia">
+                                <div class="card-body mt-2">
+                                    <ol>
+                                        <li>Faça o login em nosso site, usando seu e-mail e senha;</li>
+                                        <br>
+                                        <li>Entre em minha conta e em seguida meus pedidos</li>
+                                        <br>
+                                        <li>Depois, você irá localizar o pedido referente ao item que deseja acionar
+                                            a garantia; selecione 'Detalhes do pedido'.</li>
+                                        <br>
+                                        <li>Busque o produto que deseja solicitar garantia, clique em 'Garantia' e,
+                                            depois em 'Continuar';</li>
+                                        <br>
+                                        <li>Selecione a etiqueta/número de série do produto e clique em 'Garantia';
+                                        </li>
+                                        <br>
+                                        <li>Preencha o formulário e conclua a solicitação.</li>
+                                    </ol>
+                                    <br>
+                                    <p>Pronto! Após ter aberto este protocolo, somente terá que aguardar o retorno
+                                        de nosso departamento responsável em até 3 dias úteis.
+                                        Você receberá uma notificação em seu e-mail de cadastro, então, é importante
+                                        que acompanhe sua caixa de entrada, caixa de spam ou lixo eletrônico!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card carddoatendimento">
+                            <div id="headingGarantiaTwo">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseGarantiaTwo" aria-expanded="false"
+                                        aria-controls="collapseGarantiaTwo">
+                                        Como solicitar arrependimento?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseGarantiaTwo" class="collapse" aria-labelledby="headingGarantiaTwo"
+                                data-parent="#accordionGarantia">
+                                <div class="card-body mt-2">
+                                    <p>O Direito de Arrependimento só pode ser acionado após o recebimento da compra
+                                        em sua casa, no prazo de até 7 dias corridos. Nesse caso, siga o passo a
+                                        passo abaixo: </p>
+                                    <br>
+                                    <ol>
+                                        <li>Faça o login em nosso site, usando seu e-mail e senha;</li>
+                                        <br>
+                                        <li>Entre em minha conta e em seguida meus pedidos</li>
+                                        <br>
+                                        <li>Depois, você irá localizar o pedido referente ao item que deseja acionar
+                                            o direito de arrependimento e deverá selecionar 'Detalhes do pedido'.
+                                        </li>
+                                        <br>
+                                        <li>Busque o produto que deseja solicitar o arrependimento e, em seguida,
+                                            selecione 'Arrependimento' e depois em 'Continuar';</li>
+                                        <br>
+                                        <li>Selecione a etiqueta/número de série do produto e clique em
+                                            'Arrependimento';</li>
+                                        <br>
+                                        <li>Preencha o formulário e conclua a solicitação.</li>
+                                    </ol>
+                                    <br>
+                                    <p>Após ter aberto este protocolo, somente terá de aguardar o retorno de nosso
+                                        departamento responsável em até 3 dias úteis. Você receberá uma notificação
+                                        em seu e-mail de cadastro, então, é importante que acompanhe sua caixa de
+                                        entrada, caixa de spam ou lixo eletrônico!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card carddoatendimento">
+                            <div id="headingGarantiaThree">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseGarantiaThree"
+                                        aria-expanded="false" aria-controls="collapseGarantiaThree">
+                                        Como cancelar meu pedido?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseGarantiaThree" class="collapse" aria-labelledby="headingGarantiaThree"
+                                data-parent="#accordionGarantia">
+                                <div class="card-body mt-2">
+                                    <p>Pedido em rota de entrega: Não conseguimos cancelar pedidos que já estão em
+                                        rota de entrega, será necessário recusar, não havendo outra forma.
+                                        <br> <br>
+                                        Pedido aguardando aprovação da compra cartão de crédito: a Motherboard!
+                                        realiza tentativas de aprovação do pedido, junto a administradora do cartão,
+                                        durante 48 horas, em vários momentos do dia. Após esse prazo, caso a
+                                        aprovação não ocorra é só aguardar, pois o pedido será cancelado de forma
+                                        automática, não havendo novas tentativas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pedido -->
+                    <div class="txtPerg">
+                        <a name="pedido">
+                            <h4>Pedido</h4>
+                        </a>
+                    </div>
+                    <div class="accordion mb-5" id="accordionPedido">
+                        <div class="card carddoatendimento">
+                            <div id="headingPedidoOne">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapsePedidoOne" aria-expanded="false"
+                                        aria-controls="collapsePedidoOne">
+                                        Como verificar o status do pedido?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsePedidoOne" class="collapse" aria-labelledby="headingPedidoOne"
+                                data-parent="#accordionPedido">
+                                <div class="card-body mt-2">
+                                    <p>Para verificar o status do seu pedido, acesse sua conta e clique no pedido
+                                        que deseja ter
+                                        informações. Logo abaixo do item, você visualizará uma barra de status que
+                                        mostrará em
+                                        que momento seu pedido está. Essa barra é atualizada conforme o pedido for
+                                        avançando no
+                                        processo de aprovação da compra ou entrega, caso ocorra algum problema com o
+                                        seu pedido,
+                                        entraremos em contato para notificar e levar a melhor solução. Fique de
+                                        atento ao seu
+                                        e-mail, nossa comunicação acontece por este canal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card carddoatendimento">
+                            <div id="headingPedidoTwo">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapsePedidoTwo" aria-expanded="false"
+                                        aria-controls="collapsePedidoTwo">
+                                        Quais são as fases de compra?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsePedidoTwo" class="collapse" aria-labelledby="headingPedidoTwo"
+                                data-parent="#accordionPedido">
+                                <div class="card-body mt-2">
+                                    <p>Aqui no Motherboard, seu pedido de compra tem as seguintes fases:</p>
+                                    <br>
+                                    <ol>
+                                        <li>Pendente / Análise. Significa que foi gerado um pedido de compra no site
+                                            porém ainda
+                                            não foi detectado o pagamento. Essa etapa leva 48h úteis, tanto para
+                                            compras por
+                                            boleto quanto por cartão de crédito.
+                                            <br> <br>
+                                            Para compras por boleto, significa que a transação está em processamento
+                                            pelo banco.
+                                            Para compras por cartão de crédito, significa que a Seguradora
+                                            contratada pela
+                                            Motherboard está fazendo a análise do seu pagamento e dados para
+                                            proteção dos clientes.
+                                        </li>
+                                        <br>
+                                        <li>Aprovado . É quando foi identificado seu pagamento pelo sistema.</li>
+                                        <br>
+                                        <li>Produção . Significa que seu pedido já está sendo separado.</li>
+                                        <br>
+                                        <li>Expedição . É quando seu computador ou peça está sendo embalado, emitido
+                                            a nota fiscal e aguardando coleta pela transportadora.</li>
+                                        <br>
+                                        <li>Enviado. O envio é a fase final da sua compra, quando sua compra deixou
+                                            a Motherboard e já está com a Transportadora/Correios.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card carddoatendimento">
+                            <div id="headingPedidoThree">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapsePedidoThree" aria-expanded="false"
+                                        aria-controls="collapsePedidoThree">
+                                        Como rastrear meu pedido?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsePedidoThree" class="collapse" aria-labelledby="headingPedidoThree"
+                                data-parent="#accordionPedido">
+                                <div class="card-body mt-2">
+                                    <p>Acesse o MINHA CONTA no site ou através do APP, selecione o pedido que deseja
+                                        acompanhar,
+                                        observe que terá uma barra que mostrará a evolução da sua entrega e, caso
+                                        queira,
+                                        consultar direto com o transportador parceiro, escolhido para a entrega no
+                                        ato da
+                                        compra, é só acessar o site do parceiro, incluir o número da nota fiscal e
+                                        consultar o
+                                        status do pedido.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagamento e Estorno -->
+
+                    <div class="txtPerg">
+                        <a name="estorno">
+                            <h4>Pagamento e Estorno</h4>
+                        </a>
+                    </div>
+                    <div class="accordion mb-5" id="accordionPagamento">
+                        <div class="card carddoatendimento">
+                            <div id="headingPagamentoOne">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapsePagamentoOne" aria-expanded="true"
+                                        aria-controls="collapsePagamentoOne">
+                                        Fiz a compra com o cartão, apareceu aprovado, mas o pedido foi cancelado.
+                                        Por quê?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsePagamentoOne" class="collapse" aria-labelledby="headingPagamentoOne"
+                                data-parent="#accordionPagamento">
+                                <div class="card-body mt-2">
+                                    <p>Para segurança dos nossos clientes o Motherboard! possui um serviço de
+                                        anti-fraude que faz toda
+                                        a investigação dos dados das compras para garantir que tudo vai ocorrer de
+                                        acordo com o
+                                        esperado. Caso o pedido não seja aprovado por data divergente, limite ou
+                                        outros, a
+                                        reserva do seu limite será liberada em até 48 horas após o cancelamento
+                                        oficial.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card carddoatendimento">
+                            <div id="headingPagamentoTwo">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapsePagamentoTwo" aria-expanded="false"
+                                        aria-controls="collapsePagamentoTwo">
+                                        Dúvidas sobre estorno
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsePagamentoTwo" class="collapse" aria-labelledby="headingPagamentoTwo"
+                                data-parent="#accordionPagamento">
+                                <div class="card-body mt-2">
+                                    <p>O prazo para o estorno no cartão de crédito é feito de imediato pelo
+                                        Motherboard! Quando o
+                                        pedido é cancelado, no entanto, pode variar de acordo com o fechamento da
+                                        sua fatura,
+                                        podendo ser visualizado em até duas faturas subsequentes à data da
+                                        solicitação. Por
+                                        isso, pedimos que aguarde e acompanhe sua fatura. Já para o estorno em conta
+                                        bancária,
+                                        se já nos passou os dados, basta aguardar que te informaremos em seu e-mail
+                                        de cadastro
+                                        quando for dado andamento, o prazo para conclusão do estorno após essa
+                                        informação é de
+                                        até 3 dias úteis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card carddoatendimento">
+                            <div id="headingPagamentoThree">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapsePagamentoThree"
+                                        aria-expanded="false" aria-controls="collapsePagamentoThree">
+                                        Qual é o prazo para a confirmação de pagamento?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsePagamentoThree" class="collapse" aria-labelledby="headingPagamentoThree"
+                                data-parent="#accordionPagamento">
+                                <div class="card-body mt-2">
+                                    <p>Pagamentos efetuados via Boleto Bancário e Cartão de Crédito têm um prazo de
+                                        1 a 2 dias
+                                        úteis para confirmação; já para pagamentos via PIX, o prazo de confirmação é
+                                        de até 30
+                                        minutos. Se esse período for expirado e o pagamento de seu pedido permanecer
+                                        indicado
+                                        como pendente, será necessário entrar em contato com o nosso Atendimento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Retirada de Produtos -->
+
+                    <div class="txtPerg">
+                        <a name="retirar">
+                            <h4>Retirada de Produtos</h4>
+                        </a>
+                    </div>
+
+                    <div class="accordion mb-5" id="accordionRetirada">
+                        <div class="card carddoatendimento">
+                            <div id="headingRetiradaOne">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseRetiradaOne" aria-expanded="true"
+                                        aria-controls="collapseRetiradaOne">
+                                        Onde retiro meu produto?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseRetiradaOne" class="collapse" aria-labelledby="headingRetiradaOne"
+                                data-parent="#accordionRetirada">
+                                <div class="card-body mt-2">
+                                    <p>Atualmente, as lojas físicas em que a opção 'Retirar seu Produto' (no caso,
+                                        comprado no
+                                        Motherboard!), podem estar disponíveis, conforme anúncio do item. Consulte
+                                        através do seu CEP
+                                        para visualizar a loja mais próxima disponível.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card carddoatendimento">
+                            <div id="headingRetiradaTwo">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseRetiradaTwo" aria-expanded="false"
+                                        aria-controls="collapseRetiradaTwo">
+                                        Quem pode retirar?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseRetiradaTwo" class="collapse" aria-labelledby="headingRetiradaTwo"
+                                data-parent="#accordionRetirada">
+                                <div class="card-body mt-2">
+                                    <p>Apenas o titular da compra ou pessoa indicada no site do Motherboard!, no
+                                        momento da compra,
+                                        desde que maior de 18 anos, poderão retirar o produto, mediante a
+                                        apresentação de um
+                                        documento com foto contendo N° do CPF.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card carddoatendimento">
+                            <div id="headingRetiradaThree">
+                                <h5 class="mb-0 rounded-3">
+                                    <button class="btn btn-link accordion-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseRetiradaThree"
+                                        aria-expanded="false" aria-controls="collapseRetiradaThree">
+                                        Todos os produtos podem ser retirados?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseRetiradaThree" class="collapse" aria-labelledby="headingRetiradaThree"
+                                data-parent="#accordionRetirada">
+                                <div class="card-body mt-2">
+                                    <p>É possível retirar pessoalmente nas lojas Parceiras apenas os produtos que
+                                        são vendidos e
+                                        entregues pelo Motherboard!. Você pode identificá-los ao acessar a página do
+                                        item que
+                                        deseja, na frase “Vendido e entregue por: Motherboard! | Em estoque”, que
+                                        está logo
+                                        acima do preço</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="chatbot-toggler" onclick="toggleChat()">
+            <span class="material-symbols-rounded"><i class="bi bi-robot fs-1"></i></span>
+            <span class="material-symbols-outlined"><i class="bi bi-x-lg fs-3"></i></span>
+        </button>
+
+        <div class="chatbot border" id="chat-box">
+            <header>
+                <h3 class="text-center">Robô de Atendimento</h3>
+                <span class="close-btn material-symbols-outlined" onclick="toggleChat()"><i
+                        class="bi bi-x-lg fs-1"></i></span>
+            </header>
+            <ul class="chatbox" id="chat-messages">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined"><i class="bi bi-robot fs-1"></i></span>
+                    <p>Olá, Seja Bem-vindo(a) à Motherboard Tecnologic. 👋<br>Como podemos ajudar?</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea class="rounded-2 txtareaBot" id="chat-input" placeholder="Digite sua mensagem..." spellcheck="false"
+                    required></textarea>
+                <span id="send-btn" class="material-symbols-rounded" onclick="sendMessage()"><i
+                        class="bi bi-arrow-right fs-1"></i></span>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-white mt-5 pt-5 pb-4"  data-bs-theme="dark">
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <a href="#" class="navbar-brand">
+                        <img class="imgMother mb-4" src="Imagens/image-light.png">
+                    </a>  
+                    <section class="mb-4">
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoface" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhottw" href="https://x.com/Motherboard2024" role="button"><i class="bi bi-twitter"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoinsta" href="https://www.instagram.com/motherboardtecnologic1" role="button"><i class="bi bi-instagram"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhoyou" href="https://www.youtube.com/@MotherboardTecnologic" role="button"><i class="bi bi-youtube"></i></a>
+                      <a class="btn btn-outline-light btn-floating m-1 botaozinhogit" href="https://github.com/akavh/TCC3ANOC" role="button"><i class="bi bi-github"></i></a>
+                  </section>
+                </div>
+                
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Dúvidas:</h6>
+                    <p>
+                      <a href="Politica.html" class="links2"> Reembolso</a>
+                        
+                    </p>
+                    <p>
+                      <a href="atendimento.html" class="links2"> Prazos e Entregas</a>
+                    </p>
+                    <p>
+                        
+                        <a href="atendimento.html" class="links2"> Formas de pagamento</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Cliente:</h6>
+                    <p>
+                        <a href="Conta.html" class="links2"> Minha Conta</a>
+                    </p>
+                    <p>
+                        <a href="Conta.html" class="links2"> Meus pedidos</a>
+                    </p>
+                    <p>
+                        <a href="atendimento.html" class="links2"> Atendimento ao Cliente</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Ajuda:</h6>
+                    <p>
+                      <a href="SobreNos.html" class=" links2"> Sobre nós</a>
+                        
+                    </p>
+                    <p>
+                      <a href="FaleConosco.html" class=" links2"> Fale Conosco</a>
+                    </p>
+                    <p>
+                      <a href="Politica.html" class=" links2"> Política de Privacidade</a>
+                        
+                    </p>
+                </div>
+
+                <hr class="mb-4">
+                <div>
+                    <p> © 2024 Motherboard Tecnologic. Todos os direitos reservados.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/scripts/Atendimento.js"></script>
+
+</body>
+
+</html>
