@@ -122,51 +122,6 @@ function validateEmail() {
     }
 }
 
-/*
-// Função para validar E-mail com a API
-function validateEmail() {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (emailInput.value.trim() === "") {
-        emailError.textContent = "Preencha este campo.";
-        emailError.style.display = "block";
-        emailInput.classList.add('is-invalid');
-    } else if (!emailPattern.test(emailInput.value)) {
-        emailError.textContent = "E-mail inválido.";
-        emailError.style.display = "block";
-        emailInput.classList.add('is-invalid');
-    } else {
-        // Validação adicional com a API
-        validateAPIEmail();
-    }
-}
-// Função para validar Email com API
-function validateAPIEmail() {
-    if (emailInput.value.trim() === "") {
-        return;
-    }
-
-    //const apiKey = 'ab67c60948ea4ac2810add29d73b1881'; // Substitua pela sua chave de API 
-    fetch(`https://api.zerobounce.net/v2/validate?api_key=d59f43ff77b84c16b28c762809cd47cf&email=${emailInput.value}`)
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === 'valid') {
-                emailError.style.display = "none";
-                emailInput.classList.remove('is-invalid');
-                emailInput.classList.add('is-valid');
-            } else {
-                emailError.textContent = "E-mail inválido.";
-                emailError.style.display = "block";
-                emailInput.classList.add('is-invalid');
-                emailInput.classList.remove('is-valid');
-            }
-        })
-        .catch(error => {
-            console.error('Erro ao verificar o email:', error);
-        });
-}
-*/
-
-
 // Função para formatar Telefone
 function formatPhone() {
     let phoneValue = phoneInput.value.replace(/\D/g, '');
