@@ -1,6 +1,6 @@
 ![Motherboard Logo](Imagens/image-light.png)
 
-## 📝 Descrição do Projeto
+## 📝 Descrição do Projeto - Front End
 
 O projeto **Motherboard** é uma plataforma de e-commerce desenvolvida como **Trabalho de Conclusão de Curso (TCC)** por nós um grupo de estudantes do terceiro ano do ensino médio. Criada em 2023, a plataforma foca no setor de informática, comercializando aparelhos eletrônicos e componentes de hardware.
 
